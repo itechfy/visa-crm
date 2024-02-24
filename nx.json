@@ -37,7 +37,24 @@
       "options": {
         "targetName": "test"
       }
+    },
+    {
+      "plugin": "@nx/next/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "devTargetName": "dev",
+        "startTargetName": "start",
+        "serveStaticTargetName": "serve-static"
+      }
     }
   ],
-  "nxCloudAccessToken": "OGU3NjhlNWEtMmI1YS00YTk0LWIzY2MtMWRkMTJiZDQyM2NjfHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "OGU3NjhlNWEtMmI1YS00YTk0LWIzY2MtMWRkMTJiZDQyM2NjfHJlYWQtd3JpdGU=",
+  "generators": {
+    "@nx/next": {
+      "application": {
+        "style": "scss",
+        "linter": "eslint"
+      }
+    }
+  }
 }
