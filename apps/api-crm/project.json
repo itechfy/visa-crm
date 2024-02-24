@@ -1,0 +1,24 @@
+{
+  "name": "api-crm",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/api-crm/src",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "api-crm:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "api-crm:build:development"
+        },
+        "production": {
+          "buildTarget": "api-crm:build:production"
+        }
+      }
+    }
+  },
+  "tags": []
+}
